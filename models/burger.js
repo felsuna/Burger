@@ -13,7 +13,7 @@ const burger = {
         });
     },
     update: (objColVals, condition, cb)=>{
-        orm.update("cats", objColVals, condition, (res)=>{
+        orm.update("burgers", objColVals, condition, (res)=>{
             cb(res);
         });
     }
