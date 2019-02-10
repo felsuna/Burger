@@ -6,7 +6,7 @@
   </div>
 </form>
 
-<h2>You should eat these...</h2>
+<h2 class="burger-status">You should eat these:</h2>
 
 {{#each burger}}
 {{#unless devoured}}
@@ -14,13 +14,15 @@
 {{/unless}}
 {{/each}}
 
-<h2>Devoured...Yummeh!</h2>
+
+<h2  class="burger-status">Devoured...Yummeh!</h2>
 
 {{#each burger}}
 {{#if devoured}}
 <p>{{burger_name}}</p>
 {{/if}}
 {{/each}}
+
 
 <script>
   //Devour button.
