@@ -1,0 +1,66 @@
+body {
+    height: 100vh;
+    background-color:black;
+}
+
+.jumbotron {
+    background-color:rgb(209, 67, 31);
+    padding: 20px;
+    font-family: 'Amatic SC', cursive;
+    
+}
+
+.display {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.container-1, .h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Amatic SC', cursive;
+}
+
+.container-2 {
+    
+    padding: 40px;
+    margin-top: 2px;
+    text-align: center;
+    color:rgba(255, 255, 255, 0.808);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Amatic SC', cursive;
+    background-color: rgba(126, 18, 18, 0.938);
+}
+
+.footer {    
+    background-color: rgba(235, 171, 118, 0.938);
+    text-align: center;
+    align-content: center;
+    padding: 5px;
+    font-weight: bold;
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+    position: fixed;
+    height: 60px;
+    bottom: 0px;
+    width: 100%;
+}
+
+.git-icon{
+    width: 35px;
+}
+/* Footer link color */
+.link {
+    color: black;
+}
+/* Mouse hover link */
+a:hover {
+    color:rgb(25, 94, 25);
+}
+  
+/* selected link */
+a:active {
+    color: rgb(35, 69, 163);
+}
