@@ -38,17 +38,19 @@ body {
     font-weight: bold;
     /* padding-top: 1px;
     padding-bottom: 1px; */
-    background-color: rgba(223, 149, 89, 0.938);
 }
 
-.btn-warning {
+.submit {
     font-size: 30px;
     font-weight: bold;
+    color: white;
+    background-color:rgb(68, 196, 96);
 }
 
 #new-burger {
     font-size: 30px;
     font-weight: bold;
+    background-color: white;
 }
 
 .container-2 {
@@ -57,7 +59,7 @@ body {
     color:rgba(255, 255, 255, 0.808);
     font-size:40px;
     font-family: 'Amatic SC', cursive;
-    background-color: rgba(126, 18, 18, 0.938);
+    background-color: rgba(82, 11, 11, 0.938);
 }
 
 .footer {    

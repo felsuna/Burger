@@ -2,7 +2,7 @@
   <div class="form-group" id="submit">
     <label for="burger-name">Add your own Burger:</label>
     <input type="text" id="new-burger" placeholder="Name it!" name="{{burger_name}}">
-      <button type="submit" class="btn-warning">Submit</button>
+      <button type="submit" class="submit">Submit</button>
   </div>
 </form>
 
@@ -10,7 +10,7 @@
 
 {{#each burger}}
 {{#unless devoured}}
-<button class="devour btn-success btn-sm" info="{{id}}">{{burger_name}}</button> 
+<button class="devour btn-sm" info="{{id}}">{{burger_name}}</button> 
 {{/unless}}
 {{/each}}
 
