@@ -6,7 +6,8 @@ body {
 .jumbotron {
     background-color:rgb(209, 67, 31);
     padding: 20px;
-    font-family: 'Amatic SC', cursive;    
+    font-family: 'Amatic SC', cursive;   
+    color:white; 
 }
 
 /* Jumbotron title */
@@ -17,14 +18,37 @@ body {
     font-family: 'Amatic SC', cursive;
 }
 
+.eaten{
+    color:rgb(255, 157, 157);
+    font-size: 30px; 
+    font-weight: bold;
+}
 .burger-status {
     font-weight: bold;
     font-size: 40px;
+    color: rgb(108, 224, 72);
 }
 
-.create-form, .devour {
+.create-form {
     font-weight: bold;
+}
 
+.devour {
+    font-size: 30px;
+    font-weight: bold;
+    /* padding-top: 1px;
+    padding-bottom: 1px; */
+    background-color: rgba(223, 149, 89, 0.938);
+}
+
+.btn-warning {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#new-burger {
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .container-2 {
