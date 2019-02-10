@@ -1,19 +1,19 @@
 //Set up for MySQL connection.
 const mysql = require("mysql");
-//const connection;
+let connection;
 
 // Connecting project to JawsDB
-// if (process.env.JAWSDB_URL) {
-//     connection = mysql.createConnection(process.env.JAWSDB_URL);
-// } else {
-   const connection = mysql.createConnection({
-        host: "localhost",
+if (process.env.JAWSDB_URL) {
+    connection = mysql.createConnection(process.env.JAWSDB_URL);
+} else {
+    connection = mysql.createConnection({
+        host: "ofcmikjy9x4lroa2.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
         port: 3306,
-        user: "root",
-        password: "root",
-        database: "burgers_db"
+        user: "zoyf0kcn1b8cjt06",
+        password: "wbndxwgu5orfylou",
+        database: "soszli356f92nije"
     });
-// };
+};
 
 // Make connection.
 connection.connect((err) => {

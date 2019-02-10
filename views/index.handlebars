@@ -1,33 +1,53 @@
 {{!-- Create button to submit user input in db --}}
 <h1>Eat-Da-Burger!</h1>
 
-<h2>You should eat these Burgers!</h2>
+<h2>You should eat these...</h2>
 
-<ul>
-  {{#each burgers}}
-    {{#unless devoured}}
-      {{> burgers/burger-block devoured=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
+{{#each burger}}
+{{#unless devoured}}
+<p>{{burger_name}} <button class="devour" info="{{id}}">Eat Me!</button></p>
+{{/unless}}
+{{/each}}
 
-<h2>You ate it, yummeh!</h2>
+<h2>Devoured, Yum!</h2>
 
-<ul>
-  {{#each burgers}}
-    {{#if devoured}}
-      {{> burgers/burger-block devoured=false}}
-    {{/if}}
-  {{/each}}
-</ul>
+{{#each burger}}
+{{#if devoured}}
+<p>{{burger_name}}</p>
+{{/if}}
+{{/each}}
 
 <h2>Add a Burger</h2>
 <form class="create-form">
 
-  <div class="form-group">
+  <div class="form-group" id="submit">
     <label for="burger-name">Burger Name:</label>
-    <input type="text" id="burger-name" name="name">
+    <input type="text" id="burger-name" name="{{burger_name}}">
   </div>
-
   <button type="submit">Add a Burger</button>
 </form>
+
+<script>
+  //Devour button.
+  $(".devour").on("click", function () {
+    var id = $(this).attr("info");
+    $.ajax({
+      method: "put",
+      url: "api/burgers/" + id
+    }).then(data => {
+      console.log(data)
+      location.reload();
+    })
+    console.log(id)
+  });
+
+  // Submit a burger button.
+  $("#submit").on("click", function (event) {
+    event.preventDefault();
+    let newBurger = $("#burger-name").val().trim();
+    
+    console.log(newBurger)
+
+  });
+
+</script>
